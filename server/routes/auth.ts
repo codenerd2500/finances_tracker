@@ -1,9 +1,12 @@
 import { Router, Request, Response } from 'express';
 import jwt from 'jsonwebtoken';
+import { OAuth2Client } from 'google-auth-library';
 import { getDb } from '../db';
 
 const router = Router();
-const JWT_SECRET = process.env.JWT_SECRET || 'interstellar-shuttle-secret-key-2026';
+const JWT_SECRET = process.env.JWT_SECRET || 'budgetx-secret-key-2026';
+const GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID || '664432575666-k9keiu6qb88inv2kkk0ov9jjuvao6efh.apps.googleusercontent.com';
+const googleClient = new OAuth2Client(GOOGLE_CLIENT_ID);
 
 router.post('/google', async (req: Request, res: Response) => {
     try {
@@ -14,23 +17,32 @@ router.post('/google', async (req: Request, res: Response) => {
             return;
         }
 
-        let email = 'demo@interstellar.app';
+        let email = 'demo@budgetx.app';
         let name = 'Demo User';
         let googleId = 'demo';
         let avatar = '';
 
-        // Try to verify with Google userinfo endpoint
-        try {
-            const response = await fetch(`https://www.googleapis.com/oauth2/v3/userinfo?access_token=${credential}`);
-            if (response.ok) {
-                const userData = await response.json();
-                email = userData.email || email;
-                name = userData.name || name;
-                googleId = userData.sub || googleId;
-                avatar = userData.picture || '';
+        // Demo mode shortcut
+        if (credential === 'demo') {
+            // Fall through with defaults above
+        } else {
+            // Verify real Google ID token
+            try {
+                const ticket = await googleClient.verifyIdToken({
+                    idToken: credential,
+                    audience: GOOGLE_CLIENT_ID,
+                });
+                const payload = ticket.getPayload();
+                if (!payload) throw new Error('Empty token payload');
+                email = payload.email || email;
+                name = payload.name || name;
+                googleId = payload.sub || googleId;
+                avatar = payload.picture || '';
+            } catch (err) {
+                console.error('Google token verification failed:', err);
+                res.status(401).json({ message: 'Invalid Google credential' });
+                return;
             }
-        } catch (err) {
-            console.log('Google verification skipped (dev mode), using demo user');
         }
 
         const db = getDb();

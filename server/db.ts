@@ -4,7 +4,7 @@ import fs from 'fs';
 import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const DB_PATH = path.join(__dirname, '..', 'data', 'interstellar.db');
+const DB_PATH = path.join(__dirname, '..', 'data', 'budgetx.db');
 
 let db: Database.Database;
 
@@ -77,7 +77,7 @@ export function initDatabase(): Database.Database {
   const existing = db.prepare('SELECT id FROM users WHERE id = 1').get();
   if (!existing) {
     db.prepare('INSERT INTO users (id, google_id, email, name, avatar) VALUES (1, ?, ?, ?, ?)').run(
-      'demo', 'demo@interstellar.app', 'Demo User', ''
+      'demo', 'demo@budgetx.app', 'Demo User', ''
     );
   }
 

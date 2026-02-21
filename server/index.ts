@@ -34,7 +34,7 @@ function main() {
     });
 
     app.listen(PORT, () => {
-        console.log(`🚀 Interstellar Shuttle API running on http://localhost:${PORT}`);
+        console.log(`🚀 BudgetX API running on http://localhost:${PORT}`);
     });
 }
 

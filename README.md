@@ -1,60 +1,151 @@
-🚀 ledger
-ledger is a premium, high-performance Expense and Income Tracker built with a modern tech stack. It provides users with a seamless interface to manage their financial data, featuring integrated Google Authentication and real-time data visualization.
+💸 Ledger — Smart Expense & Income Tracker
 
-📑 Key Features
-Google OAuth Integration: Secure login using @react-oauth/google.
+Track your money. Visualize your growth. Stay financially unstoppable.
 
-Financial Dashboard: Comprehensive overview of income and expenses.
+Ledger is a full-stack Expense & Income Tracking App built with a modern tech stack. It helps users manage financial data with secure authentication, real-time dashboards, and interactive analytics.
 
-Interactive Analytics: Dynamic charts and graphs powered by recharts.
+✨ Live Preview (Add Yours)
 
-Full-Stack Architecture: A React frontend paired with an Express server and SQLite database (better-sqlite3).
+🔗 Frontend: https://your-frontend-url.com
+🔗 Backend API: https://your-api-url.com
+
+
+🧠 What Makes Ledger Powerful?
+
+🔐 Secure Google Login (OAuth + JWT)
+
+📊 Interactive Financial Dashboard
+
+📈 Dynamic Charts & Analytics
+
+⚡ Blazing Fast Frontend (Vite + React 19)
+
+🗄️ SQLite Database (better-sqlite3)
+
+🧩 Full TypeScript (Frontend + Backend)
 
 🛠️ Tech Stack
-Frontend: React 19, Vite, TypeScript, and Tailwind CSS.
+Frontend
 
-Backend: Express.js with tsx for TypeScript execution.
+⚛️ React 19
 
-Database: SQLite via better-sqlite3.
+⚡ Vite
 
-Authentication: JSON Web Tokens (JWT) and Google OAuth.
+🟦 TypeScript
+
+🎨 Tailwind CSS
+
+📊 Recharts
+
+Backend
+
+🚀 Express.js
+
+🔐 JSON Web Tokens (JWT)
+
+🌐 Google OAuth
+
+🗃️ SQLite (better-sqlite3)
+
+🧠 tsx (TypeScript execution)
+
+📸 Features Walkthrough
+🔑 Authentication
+
+Secure login using Google OAuth
+
+JWT-based session management
+
+📊 Dashboard
+
+Total Income Overview
+
+Total Expenses Overview
+
+Real-time updates
+
+📈 Analytics
+
+Interactive charts powered by Recharts
+
+Visual financial insights
+
+Income vs Expense comparison
 
 🚀 Getting Started
-1. Prerequisites
-Ensure you have Node.js installed on your machine.
-
-2. Installation
-Clone the repository and install the dependencies:
-
-Bash
-git clone https://github.com/codenerd2500/finances_tracker.git
-cd interstellar-shuttle
+1️⃣ Clone the Repository
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+2️⃣ Install Dependencies
 npm install
-3. Running the App
-The project requires running both the frontend and the backend server.
-
-Start the Frontend (Vite):
-
-Bash
+3️⃣ Run the Frontend
 npm run dev
-The app will be available at http://localhost:5173.
 
-Start the Backend Server:
+Frontend runs at:
 
-Bash
+http://localhost:5173
+4️⃣ Run the Backend
 npm run server
-The server runs on http://localhost:3001 and is automatically proxied for API calls.
+
+Backend runs at:
+
+http://localhost:3001
+
+API calls are proxied automatically via Vite config.
 
 📂 Project Structure
-/src: Frontend React components (Dashboard, Expense Tracker, Login, etc.).
+📦 root
+ ┣ 📂 src        → Frontend (Dashboard, Login, Tracker, Charts)
+ ┣ 📂 server     → Express API + SQLite logic
+ ┣ 📄 vite.config.ts
+ ┣ 📄 tsconfig.json
+ ┣ 📄 tsconfig.server.json
+ ┗ 📄 package.json
+📜 Available Scripts
+Command	Description
+npm run dev	Start frontend development server
+npm run build	Build production frontend
+npm run server	Start backend server
+🔐 Environment Variables
 
-/server: Express server logic and SQLite database integration.
+Create a .env file in the root:
 
-vite.config.ts: Configuration for the development server and API proxying.
+VITE_GOOGLE_CLIENT_ID=your_google_client_id
+JWT_SECRET=your_secret_key
 
-📝 Scripts
-npm run dev: Starts the Vite development server.
+⚠️ Never commit your .env file.
 
-npm run build: Compiles TypeScript and builds the production-ready frontend.
+🌟 Future Improvements
 
-npm run server: Launches the backend API server.
+📱 Mobile Responsive Enhancements
+
+📊 Monthly/Yearly Reports
+
+💳 Category-based Spending Insights
+
+🌍 Multi-currency Support
+
+☁️ Cloud Database Integration
+
+🤝 Contributing
+
+Want to improve Ledger?
+
+Fork the repo
+
+Create a new branch
+
+Commit your changes
+
+Open a Pull Request
+
+Let’s build better financial tools together.
+
+🧾 License
+
+MIT License — Feel free to use, modify, and distribute.
+
+👨‍💻 Author
+
+Built with focus and caffeine ☕
+Add your name here.

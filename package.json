@@ -1,5 +1,5 @@
 {
-  "name": "interstellar-shuttle",
+  "name": "budgetx",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -15,6 +15,7 @@
     "better-sqlite3": "^12.6.2",
     "cors": "^2.8.5",
     "express": "^4.21.0",
+    "google-auth-library": "^10.5.0",
     "jsonwebtoken": "^9.0.2",
     "lucide-react": "^0.474.0",
     "react": "^19.0.0",
