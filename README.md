@@ -1,5 +1,6 @@
+-----------------------------------------------------------------------------
 💸 Budget X — Smart Expense & Income Tracker
-
+-----------------------------------------------------------------------------
 Track your money. Visualize your growth. Stay financially unstoppable.
 
 Budget X is a full-stack Expense & Income Tracking App built with a modern tech stack. It helps users manage financial data with secure authentication, real-time dashboards, and interactive analytics.
@@ -23,8 +24,9 @@ Budget X is a full-stack Expense & Income Tracking App built with a modern tech 
 🗄️ SQLite Database (better-sqlite3)
 
 🧩 Full TypeScript (Frontend + Backend)
-
+________________________________________________________________
 🛠️ Tech Stack
+________________________________________________________________
 Frontend
 
 ⚛️ React 19
@@ -36,9 +38,9 @@ Frontend
 🎨 Tailwind CSS
 
 📊 Recharts
-
+________________________________________________________________
 Backend
-
+________________________________________________________________
 🚀 Express.js
 
 🔐 JSON Web Tokens (JWT)
@@ -71,8 +73,9 @@ Interactive charts powered by Recharts
 Visual financial insights
 
 Income vs Expense comparison
-
+_______________________________________________________________
 🚀 Getting Started
+_______________________________________________________________
 1️⃣ Clone the Repository
 git clone https://github.com/codenerd2500/finances_tracker.git
 cd finances_tracker
@@ -135,8 +138,8 @@ Open a Pull Request
 
 Let’s build better financial tools together.
 
-
+______________________________________________
 👨‍💻 Author
-
+_______________________________________________
 Built with focus and caffeine ☕
 Naveen
