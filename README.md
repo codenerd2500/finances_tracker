@@ -1,16 +1,16 @@
-💸 Ledger — Smart Expense & Income Tracker
+💸 Budget X — Smart Expense & Income Tracker
 
 Track your money. Visualize your growth. Stay financially unstoppable.
 
-Ledger is a full-stack Expense & Income Tracking App built with a modern tech stack. It helps users manage financial data with secure authentication, real-time dashboards, and interactive analytics.
+Budget X is a full-stack Expense & Income Tracking App built with a modern tech stack. It helps users manage financial data with secure authentication, real-time dashboards, and interactive analytics.
 
 ✨ Live Preview (Add Yours)
 
-🔗 Frontend: https://your-frontend-url.com
-🔗 Backend API: https://your-api-url.com
+🔗 Frontend: http://localhost:5173
+🔗 Backend API: http://localhost:3001
 
 
-🧠 What Makes Ledger Powerful?
+🧠 What Makes Budget X Powerful?
 
 🔐 Secure Google Login (OAuth + JWT)
 
@@ -74,8 +74,8 @@ Income vs Expense comparison
 
 🚀 Getting Started
 1️⃣ Clone the Repository
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/codenerd2500/finances_tracker.git
+cd finances_tracker
 2️⃣ Install Dependencies
 npm install
 3️⃣ Run the Frontend
@@ -108,12 +108,6 @@ npm run build	Build production frontend
 npm run server	Start backend server
 🔐 Environment Variables
 
-Create a .env file in the root:
-
-VITE_GOOGLE_CLIENT_ID=your_google_client_id
-JWT_SECRET=your_secret_key
-
-⚠️ Never commit your .env file.
 
 🌟 Future Improvements
 
@@ -129,7 +123,7 @@ JWT_SECRET=your_secret_key
 
 🤝 Contributing
 
-Want to improve Ledger?
+Want to improve Budget X?
 
 Fork the repo
 
@@ -141,11 +135,8 @@ Open a Pull Request
 
 Let’s build better financial tools together.
 
-🧾 License
-
-MIT License — Feel free to use, modify, and distribute.
 
 👨‍💻 Author
 
 Built with focus and caffeine ☕
-Add your name here.
+Naveen
