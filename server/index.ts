@@ -16,7 +16,11 @@ function main() {
     const app = express();
 
     // Middleware
-    app.use(cors());
+    const allowedOrigin = process.env.ALLOWED_ORIGIN;
+    app.use(cors({
+        origin: allowedOrigin ? [allowedOrigin, 'http://localhost:5173'] : true,
+        credentials: true,
+    }));
     app.use(express.json());
 
     // Auth routes (public)
